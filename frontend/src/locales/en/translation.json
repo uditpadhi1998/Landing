@@ -1,0 +1,72 @@
+{
+  "language": "English",
+  "hero": {
+    "headline": "Kandhamal's Golden Turmeric - GI-Certified, 5% Curcumin, Direct from Odisha Farms",
+    "subheadline": "Secure Your 2024 Supply with Exclusive Launch Incentives for UAE/Qatar/KSA Buyers"
+  },
+  "valueProps": {
+    "title": "Premium Quality Assurance",
+    "giTag": "Geographical Indication (GI) Tag Verified",
+    "organic": "USDA Organic & FSSAI Certification",
+    "shelfLife": "40-Year Shelf Life with Vacuum Sealed Packaging",
+    "halal": "Halal-Certified Processing"
+  },
+  "incentives": {
+    "title": "Limited-Time Incentives",
+    "bulk": "Bulk Discount: 10% off on 1000+ kg orders booked before August 30, 2024",
+    "payment": "Early Payment Bonus: 5% additional discount for 50% advance payment",
+    "loyalty": "Loyalty Rebate: 2% annual rebate for repeat orders over 5000 kg",
+    "logistics": "Free Logistics: 1st container shipment free for orders >2000 kg"
+  },
+  "samples": {
+    "title": "Try Before You Buy",
+    "free": "Free 1kg samples (max 3 variants)",
+    "shipping": "Pre-paid return shipping label",
+    "labTest": "Lab test report with each sample",
+    "qrCode": "QR code linking to farm-to-packaging video"
+  },
+  "commerce": {
+    "title": "Flexible Commerce Options",
+    "payment": "Payment terms: NET-30, NET-60, or LC arrangements",
+    "installment": "Installment plans for first-time buyers (25% down, balance pre-shipment)",
+    "insurance": "Trade credit insurance through ECGC partnership"
+  },
+  "trust": {
+    "title": "Trusted By Industry Leaders",
+    "testimonial": "Consistent 98% purity over 3 years",
+    "testimonialName": "- Ahmed Al-Farsi, Dubai Spice Imports LLC",
+    "suppliers": "Already Supplying To"
+  },
+  "compliance": {
+    "title": "Compliance Assurance",
+    "reach": "REACH/ESMA compliance documentation",
+    "aflatoxin": "Aflatoxin guarantee (<5 ppb) with penalty clauses",
+    "blockchain": "Blockchain traceability feature"
+  },
+  "cta": {
+    "primary": "Request Price List & Contract Terms",
+    "secondary": "Schedule Video Meeting with Our Food Technologist",
+    "tertiary": "Download Shelf-Life Optimization Guide"
+  },
+  "form": {
+    "name": "Full Name",
+    "company": "Company Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "country": "Country",
+    "message": "Your Message",
+    "submit": "Submit Request"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Kandhamal Turmeric",
+    "products": "Products",
+    "certification": "Certifications",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "rights": "© 2024 Kandhamal Turmeric Exports. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+}
