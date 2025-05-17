@@ -1,17 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Noto Sans Arabic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-neutral-light text-neutral-dark;
+}
+
+.rtl {
+  direction: rtl;
+  font-family: 'Noto Sans Arabic', 'Poppins', sans-serif;
+}
+
+.glass-card {
+  @apply backdrop-blur-md bg-white/70 border border-white/20 shadow-soft;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.heading-primary {
+  @apply font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight;
+}
+
+.heading-secondary {
+  @apply font-display font-semibold text-3xl md:text-4xl leading-tight;
+}
+
+.heading-tertiary {
+  @apply font-semibold text-xl md:text-2xl;
+}
+
+.primary-btn {
+  @apply bg-accent-secondary hover:bg-accent-secondary/90 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center justify-center;
+}
+
+.secondary-btn {
+  @apply bg-secondary text-white hover:bg-secondary-light font-medium py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center justify-center;
+}
+
+.tertiary-btn {
+  @apply bg-transparent border border-primary hover:bg-primary/10 text-secondary font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center;
+}
+
+.grid-fade-in > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.grid-fade-in > *.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays for grid items */
+.grid-fade-in > *:nth-child(1) { transition-delay: 0.1s; }
+.grid-fade-in > *:nth-child(2) { transition-delay: 0.2s; }
+.grid-fade-in > *:nth-child(3) { transition-delay: 0.3s; }
+.grid-fade-in > *:nth-child(4) { transition-delay: 0.4s; }
+.grid-fade-in > *:nth-child(5) { transition-delay: 0.5s; }
+.grid-fade-in > *:nth-child(6) { transition-delay: 0.6s; }
+.grid-fade-in > *:nth-child(7) { transition-delay: 0.7s; }
+.grid-fade-in > *:nth-child(8) { transition-delay: 0.8s; }
+
+/* Custom underline animation */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: theme('colors.primary.DEFAULT');
+  transition: width 0.3s ease;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+/* Pattern background with opacity control */
+.pattern-bg {
+  background-image: url('./assets/pattern.svg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
 }
